@@ -501,6 +501,13 @@
     </footer>
     <div class="modal-wraper">
       <div class="modal-window">
+        <button type="button" class="btn-close">
+          <!-- <div class="close-btn-wraper"> -->
+          <svg class="close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+          <!-- </div> -->
+        </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form" action="">
           <ul class="form-list">
@@ -557,12 +564,21 @@
             </li>
           </ul>
           <div class="form-check-policy">
-            <input type="checkbox" name="checkbox-policy" />
-            <label for="checkbox-policy">
-              <span></span>
-              <span
+            <input
+              class="form-checkbox sr-only"
+              type="checkbox"
+              name="checkbox-policy"
+              id="checkbox-policy"
+            />
+            <label class="label-checkbox-policy" for="checkbox-policy">
+              <span class="checkbox-icon-block">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check-mark" />
+                </svg>
+              </span>
+              <span class="checkbox-content"
                 >I accept the terms and conditions of the
-                <a href="#">Privacy Policy</a>
+                <a href="#" class="link-policy">Privacy Policy</a>
               </span></label
             >
           </div>
