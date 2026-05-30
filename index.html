@@ -480,12 +480,13 @@
         <div class="footer-subscribe-container">
           <p class="subscribe-title">Social media</p>
           <form class="subscribe-content" action="">
+            <label class="sr-only" for="user-email">Email</label>
             <input
               type="email"
               name="email"
               placeholder="E-mail"
               class="form-user-email"
-              aria-label="user-email"
+              id="user-email"
               required
             />
             <button class="subscribe-btn" type="submit">
@@ -498,5 +499,76 @@
         </div>
       </div>
     </footer>
+    <div class="modal-wraper">
+      <div class="modal-window">
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form" action="">
+          <ul class="form-list">
+            <li class="form-list-content">
+              <label class="form-lable" for="form-user-name">Name</label>
+              <div class="form-input-svg-wraper">
+                <input
+                  type="text"
+                  id="form-user-name"
+                  class="form-input"
+                  required
+                />
+                <svg class="form-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-person" />
+                </svg>
+              </div>
+            </li>
+            <li class="form-list-content">
+              <label class="form-lable" for="form-user-tel">Phone</label>
+              <div class="form-input-svg-wraper">
+                <input
+                  type="tel"
+                  id="form-user-tel"
+                  class="form-input"
+                  required
+                />
+                <svg class="form-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-phone" />
+                </svg>
+              </div>
+            </li>
+            <li class="form-list-content">
+              <label class="form-lable" for="form-user-email">Email</label>
+              <div class="form-input-svg-wraper">
+                <input
+                  type="email"
+                  id="form-user-email"
+                  class="form-input"
+                  required
+                />
+                <svg class="form-input-icon" width="18" height="24">
+                  <use href="./images/icons.svg#icon-email" />
+                </svg>
+              </div>
+            </li>
+            <li class="form-list-content">
+              <label class="form-lable" for="form-user-comment">Comment</label>
+              <textarea
+                name=""
+                id="form-user-comment"
+                class="form-input form-user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="form-check-policy">
+            <input type="checkbox" name="checkbox-policy" />
+            <label for="checkbox-policy">
+              <span></span>
+              <span
+                >I accept the terms and conditions of the
+                <a href="#">Privacy Policy</a>
+              </span></label
+            >
+          </div>
+          <button class="modal-form-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
