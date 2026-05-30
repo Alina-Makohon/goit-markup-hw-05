@@ -65,14 +65,13 @@
 }
 
 .form-user-email {
-  padding: 13px 16px;
+  padding: 12px 16px;
   background-color: transparent;
   min-width: 264px;
   border: 1px solid #fff;
   border-radius: 4px;
   font-weight: 400;
   font-size: 12px;
-
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #fff;
